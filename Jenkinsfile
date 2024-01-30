@@ -21,6 +21,7 @@ pipeline {
             steps {
                 script {
                     echo 'build'
+                    
                     def dockerImage = docker.build("aymen/node-demo:master")
                     docker.withRegistry('https://registry.hub.docker.com', 'demo-docker') {
                         dockerImage.push('master')
