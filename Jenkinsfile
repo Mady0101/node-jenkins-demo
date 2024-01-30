@@ -18,6 +18,7 @@ pipeline {
             steps {
                 script {
                     echo 'build'
+                    // echo 'build'
                     // def dockerImage = docker.build("aymen/node-demo:master")
                     // docker.withRegistry('', 'demo-docker') {
                     //     dockerImage.push('master')
