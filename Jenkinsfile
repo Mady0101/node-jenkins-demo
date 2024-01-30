@@ -12,7 +12,7 @@ pipeline {
                         sh 'npm install'
                         echo 'Testing..'
                         sh 'npm test'
-                        sh "docker logs ${c.id}"
+                        // sh "docker logs ${c.id}"
                    // }
                 }
             }
